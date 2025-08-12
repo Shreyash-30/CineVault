@@ -2,6 +2,9 @@ import React from "react";
 import Logo from "../assets/logo.png";
 import { Link, NavLink } from "react-router-dom";
 import BgImage from "../assets/BgImage.png";
+import Search from "./Search"
+
+
 
 export default function Navbar() {
   const navLinks = [
@@ -40,21 +43,13 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <label htmlFor="search" className="sr-only">
-              Search
-            </label>
-            <input
-              id="search"
-              className="w-full md:w-[450px] border-2 border-solid border-black px-2 py-1 rounded text-black"
-              type="text"
-              placeholder="Search..."
-            />
+            <Search />
           </li>
         </ul>
       </div>
 
       {/* Hero Section */}
-      <div className="flex justify-center mt-[120px] px-4 text-center">
+      <div className="flex justify-center py-4 mt-40 px-4 text-center">
         <h1 className="font-serif text-[40px] md:text-[75px] max-w-[800px]">
           Your ultimate vault for movies & shows
         </h1>

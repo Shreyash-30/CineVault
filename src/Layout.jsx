@@ -5,7 +5,7 @@ import Navbar
 export default function Layout() {
   return (
     <div>
-        <Navbar/>
+      {/* //  <Navbar/> */}
         <Outlet/>
         
     </div>
